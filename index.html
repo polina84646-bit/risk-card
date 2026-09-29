@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#252829">
+  <title>Разгерметизация котельного оборудования: учебный материал</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <p class="eyebrow">Промышленная безопасность <span>/</span> Учебный материал</p>
+      <h1>Разгерметизация<br>котельного оборудования</h1>
+      <p class="subtitle">Как снизить риск и действовать при аварийной утечке</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="tab-shell">
+      <div class="tab-list" role="tablist" aria-label="Разделы учебного материала">
+        <button id="tab-overview" class="tab-button is-active" type="button" role="tab" aria-selected="true" aria-controls="panel-overview" tabindex="0">Обзор</button>
+        <button id="tab-photos" class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="panel-photos" tabindex="-1">Фотографии</button>
+        <button id="tab-prevention" class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="panel-prevention" tabindex="-1">Профилактика</button>
+        <button id="tab-response" class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="panel-response" tabindex="-1">При аварии</button>
+        <button id="tab-after" class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="panel-after" tabindex="-1">После события</button>
+        <button id="tab-checklist" class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="panel-checklist" tabindex="-1">Чек-лист</button>
+        <button id="tab-sources" class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="panel-sources" tabindex="-1">Источники</button>
+      </div>
+
+      <section id="panel-overview" class="tab-panel is-active" role="tabpanel" aria-labelledby="tab-overview" tabindex="0">
+        <p class="section-index">01 / Риск и последствия</p>
+        <h2>Что происходит при разгерметизации</h2>
+        <p>Разгерметизация — потеря герметичности котла, сосуда или трубопровода, работающего под давлением. Выходящая среда может быть горячей водой или паром; в зависимости от топлива и соседних систем добавляются риски пожара, токсичного воздействия и развития аварии на связанном оборудовании.</p>
+        <div class="info-grid">
+          <article class="info-item"><h3>Энергия давления</h3><p>Даже без пламени внезапный выход среды способен травмировать паром, горячей водой, струёй или разлетающимися фрагментами.</p></article>
+          <article class="info-item"><h3>Вторичные события</h3><p>Утечка топлива, отказ автоматики или повреждение соседнего оборудования могут увеличить масштаб происшествия.</p></article>
+          <article class="info-item"><h3>Общий знаменатель</h3><p>Причины часто сочетают состояние оборудования, нарушение режима, ошибки управления и внешние воздействия.</p></article>
+        </div>
+        <h3>Типовая цепочка событий</h3>
+        <ol class="sequence-list">
+          <li>Дефект или отклонение режима</li><li>Утечка либо повреждение</li><li>Срабатывание защиты и действия персонала</li><li>Локализация или развитие последствий</li>
+        </ol>
+        <p class="note"><strong>Важно.</strong> Приказ № 411 описывает оценку риска для трубопроводов с взрывопожароопасными жидкостями на промышленных площадках. Это полезный пример метода анализа сценариев, но не самостоятельный норматив по эксплуатации паровых и водогрейных котлов.</p>
+      </section>
+
+      <section id="panel-photos" class="tab-panel" role="tabpanel" aria-labelledby="tab-photos" tabindex="0" hidden>
+        <p class="section-index">02 / Объект и оборудование</p>
+        <h2>Котельная в деталях</h2>
+        <p>Внешний вид объекта и его основные инженерные узлы.</p>
+        <div class="photo-grid">
+          <figure class="photo-card"><div class="photo-frame" data-placeholder="images/boiler-exterior.jpg"><img src="images/boiler-exterior.jpg" alt="Здание котельной с дымовыми трубами в зимний день" loading="lazy"></div><figcaption><span>01</span> Котельная и дымовые трубы</figcaption></figure>
+          <figure class="photo-card"><div class="photo-frame" data-placeholder="images/pressure-vessel.jpg"><img src="images/pressure-vessel.jpg" alt="Наружная ёмкость промышленной котельной" loading="lazy"></div><figcaption><span>02</span> Наружная ёмкость</figcaption></figure>
+          <figure class="photo-card"><div class="photo-frame" data-placeholder="images/boiler-room.jpg"><img src="images/boiler-room.jpg" alt="Котельное оборудование, горелки и трубопроводы" loading="lazy"></div><figcaption><span>03</span> Котлы и трубопроводы</figcaption></figure>
+          <figure class="photo-card"><div class="photo-frame" data-placeholder="images/pump-room.jpg"><img src="images/pump-room.jpg" alt="Насосы, запорная арматура и трубопроводы котельной" loading="lazy"></div><figcaption><span>04</span> Насосный узел и арматура</figcaption></figure>
+        </div>
+      </section>
+
+      <section id="panel-prevention" class="tab-panel" role="tabpanel" aria-labelledby="tab-prevention" tabindex="0" hidden>
+        <p class="section-index">03 / Профилактика</p>
+        <h2>Как снижать риск каждый день</h2>
+        <p>Правила № 536 связывают безопасную эксплуатацию с подготовленным персоналом, исправной автоматикой и работой в пределах параметров конкретного котла.</p>
+        <div class="practice-list">
+          <article><span class="practice-number">01</span><div><h3>Следить за параметрами</h3><p>Контролировать давление и уровень воды по приборам и допустимым значениям из паспорта, режимной карты и инструкции. Не игнорировать сигнализацию или необычные отклонения.</p></div></article>
+          <article><span class="practice-number">02</span><div><h3>Проверять защиты</h3><p>Проверки манометров, указателей уровня, предохранительных клапанов, сигнализации и блокировок выполняют по графику и производственной инструкции; результаты фиксируют в эксплуатационных документах.</p></div></article>
+          <article><span class="practice-number">03</span><div><h3>Не запускать неисправное</h3><p>После ремонта до пуска проверяют готовность основного и вспомогательного оборудования, КИП, дистанционного управления, защит и блокировок. Неисправности устраняют до пуска.</p></div></article>
+          <article><span class="practice-number">04</span><div><h3>Вести историю оборудования</h3><p>Плановый и внеплановый ремонт, обнаруженные дефекты, выполненные работы и результаты проверок должны оставаться в журнале и документации котла.</p></div></article>
+        </div>
+        <p class="note"><strong>Практический вопрос смены:</strong> «Что изменилось по сравнению с обычным режимом и какая защита должна сработать при этом отклонении?» Ответ должен опираться на инструкцию именно вашего котла, а не на универсальную памятку.</p>
+      </section>
+
+      <section id="panel-response" class="tab-panel" role="tabpanel" aria-labelledby="tab-response" tabindex="0" hidden>
+        <p class="section-index">04 / Реагирование</p>
+        <h2>При утечке или признаках повреждения</h2>
+        <p>На объекте должны быть утверждённые инструкции для аварийных ситуаций. В них задаются оперативные действия, порядок оповещения, эвакуация, способы приведения оборудования в безопасное состояние и распределение ответственности.</p>
+        <ol class="response-steps">
+          <li><strong>Подайте сигнал и сообщите ответственному.</strong> Оповестите смену и диспетчера по принятому на объекте порядку.</li>
+          <li><strong>Уведите людей из опасной зоны.</strong> При выходе пара, горячей воды, дыма или топлива не приближайтесь к месту повреждения и не пересекайте облако выброса.</li>
+          <li><strong>Останавливайте оборудование только по инструкции.</strong> Аварийное отключение выполняет обученный персонал в соответствии с инструкцией для конкретного котла и обстановкой.</li>
+          <li><strong>Вызовите аварийные службы.</strong> Используйте установленную схему оповещения предприятия и сообщите известные данные без попыток самостоятельно обследовать утечку.</li>
+          <li><strong>Окажите помощь, если это безопасно.</strong> Не входите в опасную зону ради спасения без средств защиты и подготовки; следуйте указаниям диспетчера и обученных спасателей.</li>
+        </ol>
+        <div class="warning-band"><strong>Не продолжайте работу через неисправную защиту.</strong> В Правилах № 536 среди оснований для немедленной остановки котла названы, в частности, неисправность предохранительного клапана, опасные отклонения давления или уровня воды, течь/трещина элементов и отказ автоматики безопасности. Конкретный порядок остановки и границы применимости определяет инструкция объекта.</div>
+      </section>
+
+      <section id="panel-after" class="tab-panel" role="tabpanel" aria-labelledby="tab-after" tabindex="0" hidden>
+        <p class="section-index">05 / После события</p>
+        <h2>Не возвращать оборудование в работу автоматически</h2>
+        <p>После того как непосредственная угроза устранена, дальнейшие действия организует ответственное лицо предприятия. Восстановление — это не просто повторный пуск: сначала нужно понять, что отказало и какие барьеры не сработали.</p>
+        <ul class="after-list">
+          <li><strong>Зафиксировать событие:</strong> время, режим, сообщения сигнализации и защит, действия персонала, повреждения и выполненные переключения.</li>
+          <li><strong>Сохранить записи и документы:</strong> сменный журнал, ремонтную документацию, результаты осмотров и сведения о техническом состоянии.</li>
+          <li><strong>Провести техническую оценку:</strong> определить объём повреждений и необходимые осмотры, диагностику или ремонт силами компетентных специалистов.</li>
+          <li><strong>Уточнить порядок уведомления:</strong> классификация события и обязанности эксплуатирующей организации зависят от обстоятельств и действующих требований.</li>
+          <li><strong>Возобновлять работу только после допуска:</strong> по утверждённой процедуре, после устранения причин и проверки готовности оборудования и защит.</li>
+        </ul>
+        <p class="note"><strong>Разбор причин полезнее поиска виноватого.</strong> Руководство № 411 предлагает рассматривать отказ устройства, действия персонала и внешние воздействия совместно, строить сценарии развития и выбирать меры, снижающие вероятность события или тяжесть последствий.</p>
+      </section>
+
+      <section id="panel-checklist" class="tab-panel" role="tabpanel" aria-labelledby="tab-checklist" tabindex="0" hidden>
+        <p class="section-index">06 / Самопроверка</p>
+        <h2>Чек-лист готовности</h2>
+        <p>Отметки помогают проверить готовность к обучению или сменному обсуждению. Это не заменяет производственную инструкцию, наряд-допуск или план ликвидации аварии.</p>
+        <form id="checklist-form" class="checklist-form">
+          <fieldset><legend>До события</legend>
+            <label><input type="checkbox" name="checklist" value="before-1"> Проведён осмотр оборудования</label>
+            <label><input type="checkbox" name="checklist" value="before-2"> Проверены приборы и сигнализация по графику</label>
+            <label><input type="checkbox" name="checklist" value="before-3"> Актуальны инструкция и контакты смены</label>
+          </fieldset>
+          <fieldset><legend>При событии</legend>
+            <label><input type="checkbox" name="checklist" value="during-1"> Персонал знает порядок оповещения</label>
+            <label><input type="checkbox" name="checklist" value="during-2"> Определены безопасные пути выхода</label>
+            <label><input type="checkbox" name="checklist" value="during-3"> Понятно, кто и по какой инструкции останавливает котёл</label>
+          </fieldset>
+          <fieldset><legend>После события</legend>
+            <label><input type="checkbox" name="checklist" value="after-1"> Зафиксированы время и обстоятельства</label>
+            <label><input type="checkbox" name="checklist" value="after-2"> Организована оценка повреждений</label>
+            <label><input type="checkbox" name="checklist" value="after-3"> Пуск разрешён после устранения причин и проверки</label>
+          </fieldset>
+          <div class="checklist-actions">
+            <button type="button" id="check-all">Отметить все</button>
+            <button type="button" id="uncheck-all">Снять все</button>
+            <button type="button" id="show-status">Показать статус</button>
+          </div>
+        </form>
+        <p id="checklist-status" class="checklist-status" role="status" aria-live="polite"></p>
+      </section>
+
+      <section id="panel-sources" class="tab-panel" role="tabpanel" aria-labelledby="tab-sources" tabindex="0" hidden>
+        <p class="section-index">07 / Документы и границы применения</p>
+        <h2>Источники и важные оговорки</h2>
+        <ul class="sources-list">
+          <li><strong>Приказ Ростехнадзора от 15.12.2020 № 536</strong> — федеральные нормы и правила для оборудования под избыточным давлением. В использованной редакции есть разделы об эксплуатации котлов и действиях при аварии или инциденте. Источник указывает ограничение срока действия до 1 января 2027 года; перед практическим применением проверьте актуальность редакции и заменяющий документ. <a href="https://www.consultant.ru/document/cons_doc_LAW_373204/" target="_blank" rel="noopener noreferrer">Открыть документ в КонсультантПлюс</a>.</li>
+          <li><strong>Приказ Ростехнадзора от 28.11.2022 № 411</strong> — методика оценки риска аварий на трубопроводах, перемещающих взрывопожароопасные жидкости. В материале использованы общие идеи: идентифицировать опасности и сценарии, учитывать отказы, человеческий фактор и внешние воздействия, документировать исходные данные, выбирать адресные меры. Область применения документа ограничена; для котла это не замена ФНП по оборудованию под давлением. <a href="https://www.garant.ru/products/ipo/prime/doc/406060977/" target="_blank" rel="noopener noreferrer">Открыть текст приказа и руководства</a>.</li>
+        </ul>
+        <p class="note"><strong>Учебный материал.</strong> Здесь не приводятся универсальные уставки давления, расстояния эвакуации или команды переключения: они зависят от проекта, паспорта оборудования, вещества, местных инструкций и действующих норм.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container"><p>Учебный проект. Данные не являются официальными.</p></div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
